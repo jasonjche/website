@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <body className="max-w-7xl mx-auto p-8 bg-dawn-bg">
+    <html className="max-w-7xl mx-auto p-8 bg-dawn-bg">
       <h1 className="text-4xl font-bold mb-4 text-dawn-text">Jason He</h1>
       <h2 className="text-2xl font-medium mb-4 text-dawn-text">Product Management Intern at Reddit</h2>
       <h3 className="text-1xl font-light mb-4 text-dawn-text">University of Virginia | Computer Science and Commerce</h3>
@@ -38,6 +38,6 @@ export default function Home() {
       <div className="mt-8 text-center">
         <a href="https://www.dropbox.com/s/za6ptynh53kt8bc/Jason%20He%20Resume%20-%20Product.pdf?dl=0" className="text-dawn-accent text-lg">Here is my resume</a>
       </div>
-    </body>
+    </html>
   );
 }
