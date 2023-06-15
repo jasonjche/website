@@ -20,28 +20,26 @@ export default function Home() {
         <ResumeCard />
       </div>
 
-      <ExperienceCard className='row-start-2 col-start-1 row-span-3' />
+      <ExperienceCard className='row-start-2 col-start-1 row-span-2' />
 
       <NameCard className='col-span-2' />
-
-      <Card title="Text-Savvy" className="">
-        {/* Add content here */}
-      </Card>
-
-      <Card title="Totem" className="">
-        {/* Add content here */}
-      </Card>
-
-      <Card title="VEO" className="">
-        {/* Add content here */}
-      </Card>
-
 
       <Card title="" className="">
         <img src="/uva.png" alt="UVA" width={100} height={100} />
         <p className=''>Computer Science & Commerce</p>
       </Card>
 
+      <Card title="Text-Savvy" className="">
+        <p>Become a better texter!</p>
+      </Card>
+
+      <Card title="Totem" className="">
+        <p>Never lose your friends at a festival again!</p>
+      </Card>
+
+      <Card title="recipez" className="">
+        <p>Don't think about your grocery list</p>
+      </Card>
     </div>
   );
 }

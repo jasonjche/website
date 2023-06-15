@@ -25,7 +25,7 @@ const ContactCard = () => {
                 {...cardLinkProps}
                 aria-label="Jason's Github"
             >
-                <Card className={`hover:bg-black ${cardHoverClasses}`}>
+                <Card className={`hover:bg-[#333] ${cardHoverClasses}`}>
                     <FaGithub />
                 </Card>
             </a>

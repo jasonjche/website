@@ -1,40 +1,34 @@
 import { Card } from './Card';
 
 type ExperienceCardProps = {
-    className?: string;
+  className?: string;
 };
 
-const ExperienceCard = ({className} : ExperienceCardProps) => {
-    return (
-        <Card title="Experience" className={`${className}`}>
-             <ul className="space-y-4">
-            <li>Reddit: Product Management Intern
-              <ul className="list-disc list-inside space-y-2">
-                <li>Mobile App Retargeting</li>
-                <li>Keyword Targeting Intelligence</li>
-              </ul>
-            </li>
-            <li>Stacker: Product Management Intern
-              <ul className="list-disc list-inside space-y-2">
-                <li>Stacker Story Hub</li>
-                <li>Internal Analytics</li>
-              </ul>
-            </li>
-            <li>Viget: Product Management Intern
-              <ul className="list-disc list-inside space-y-2">
-                <li>SpectrumAI Twyll</li>
-                <li>Joust Intern Project</li>
-              </ul>
-            </li>
-            <li>Parenthood Ventures: Venture Intern
-              <ul className="list-disc list-inside space-y-2">
-                <li>Airtable Backend</li>
-                <li>Automated Mailing List</li>
-              </ul>
-            </li>
-          </ul>
-        </Card>
-    );
+const ExperienceCard = ({ className }: ExperienceCardProps) => {
+  return (
+    <Card title="Experience" className={`${className} p-4 grid grid-cols-1 gap-4`}>
+      <div className="flex flex-row items-right text-center gap-4">
+        <img src="/reddit-logo.jpeg" alt="Reddit" className="w-16 h-16 rounded-xl" />
+        <p className="">Reddit: Product Management Intern</p>
+      </div>
+      <div className="flex flex-row items-right text-center">
+        <img src="/uva-logo.jpeg" alt="UVA HCI" className="w-16 h-16" />
+        <p className="">UVA HCI: VR Researcher</p>
+      </div>
+      <div className="flex flex-row items-right text-center">
+        <img src="/stacker-logo.jpeg" alt="Stacker" className="w-16 h-16" />
+        <p className="">Stacker: Product Management Intern</p>
+      </div>
+      <div className="flex flex-row items-right text-center">
+        <img src="/viget-logo.jpeg" alt="Viget" className="w-16 h-16" />
+        <p className="">Viget: Product Management Intern</p>
+      </div>
+      <div className="flex flex-row items-right text-center">
+        <img src="/pv-logo.jpeg" alt="Parenthood Ventures" className="w-16 h-16" />
+        <p className="">Parenthood Ventures: Venture Intern</p>
+      </div>
+    </Card>
+  );
 };
 
 export default ExperienceCard;
