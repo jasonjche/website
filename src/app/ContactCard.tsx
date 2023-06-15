@@ -1,16 +1,53 @@
 import { Card } from './Card';
-import { FaTwitter, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const ContactCard = () => {
+    const cardLinkProps = {
+        target: '_blank',
+        rel: 'noopener noreferrer',
+    };
+
+    const cardHoverClasses = 'hover:text-white transition-colors duration-200 block flex justify-center items-center';
+
     return (
-        <Card className="">
-            <div className="p-6 flex flex-row justify-between items-center text-4xl">
-                <a href="https://twitter.com/jasonjche" target="_blank" rel="noopener noreferrer" aria-label="Jason's Twitter" className="hover:text-[#1DA1F2] transition-colors duration-200 block"><FaTwitter /></a>
-                <a href="https://github.com/jasonjche" target="_blank" rel="noopener noreferrer" aria-label="Jason's Github" className="hover:text-purple-500 transition-colors duration-200 block"><FaGithub /></a>
-                <a href="https://www.linkedin.com/in/jasonjche" target="_blank" rel="noopener noreferrer" aria-label="Jason's LinkedIn" className="hover:text-[#0077B5] transition-colors duration-200 block"><FaLinkedin /></a>
-                <a href="mailto:jasonjche@virginia.edu" target="_blank" rel="noopener noreferrer" aria-label="Email Jason" className="hover:text-red-600 transition-colors duration-200 block"><FaEnvelope /></a>
-            </div>
-        </Card>
+        <div className='grid grid-cols-4 gap-4 text-4xl'>
+            <a
+                href="https://twitter.com/jasonjche"
+                {...cardLinkProps}
+                aria-label="Jason's Twitter"
+            >
+                <Card className={`hover:bg-[#1DA1F2] ${cardHoverClasses}`}>
+                    <FaTwitter />
+                </Card>
+            </a>
+            <a
+                href="https://github.com/jasonjche"
+                {...cardLinkProps}
+                aria-label="Jason's Github"
+            >
+                <Card className={`hover:bg-black ${cardHoverClasses}`}>
+                    <FaGithub />
+                </Card>
+            </a>
+            <a
+                href="https://www.linkedin.com/in/jasonjche"
+                {...cardLinkProps}
+                aria-label="Jason's LinkedIn"
+            >
+                <Card className={`hover:bg-[#0077B5] ${cardHoverClasses}`}>
+                    <FaLinkedin />
+                </Card>
+            </a>
+            <a
+                href="mailto:jasonjche@virginia.edu"
+                {...cardLinkProps}
+                aria-label="Email Jason"
+            >
+                <Card className={`hover:bg-red-500 ${cardHoverClasses}`}>
+                    <FaEnvelope />
+                </Card>
+            </a>
+        </div>
     );
 };
 

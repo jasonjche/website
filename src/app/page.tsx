@@ -7,32 +7,41 @@ import BioCard from './BioCard';
 
 export default function Home() {
   return (
-    <div className='grid grid-cols-3 gap-4 py-4 px-28'>
-      <NameCard />
+    <div className='grid grid-cols-4 gap-4 py-4 px-52'>
+
+      <Card
+        title="📍 San Francisco"
+        className="bg-sf bg-cover bg-top text-white text-center"
+      >
+      </Card>
       <BioCard />
-      <div className='flex flex-col gap-4'>
+      <div className='grid grid-rows-2 col-span-2 gap-4'>
         <ContactCard />
         <ResumeCard />
       </div>
 
-      <ExperienceCard className='row-start-2 col-start-1 row-span-3 col-span-1'/>
+      <ExperienceCard className='row-start-2 col-start-1 row-span-3' />
 
-      <Card title="Education" className="row-start-2 col-start-2 p-4">
+      <NameCard className='col-span-2' />
+
+      <Card title="Text-Savvy" className="">
+        {/* Add content here */}
+      </Card>
+
+      <Card title="Totem" className="">
+        {/* Add content here */}
+      </Card>
+
+      <Card title="VEO" className="">
+        {/* Add content here */}
+      </Card>
+
+
+      <Card title="" className="">
         <img src="/uva.png" alt="UVA" width={100} height={100} />
-        <p>University of Virginia | Computer Science & Commerce</p>
+        <p className=''>Computer Science & Commerce</p>
       </Card>
 
-      <Card title="Text-Savvy" className="row-start-2 col-start-3 p-4">
-        {/* Add content here */}
-      </Card>
-
-      <Card title="Totem" className="row-start-3 col-start-2 p-4">
-        {/* Add content here */}
-      </Card>
-
-      <Card title="VEO" className="row-start-3 col-start-3 p-4">
-        {/* Add content here */}
-      </Card>
     </div>
   );
 }
