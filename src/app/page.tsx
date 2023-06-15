@@ -24,12 +24,24 @@ export default function Home() {
 
       <NameCard className='col-span-2' />
 
-      <Card title="" className="">
-        <img src="/uva.png" alt="UVA" width={100} height={100} />
-        <p className=''>Computer Science & Commerce</p>
+      <Card
+        title=""
+        className="bg-gradient-to-b from-blue-600 to-blue-400 text-white"
+      >
+        <div className="px-6 py-8">
+          <img
+            src="/UVA-Symbol.png"
+            alt="UVA"
+            className="mx-auto mb-4 w-24 h-24"
+          />
+          <p className="text-xl font-semibold text-center mb-2">
+            University of Virginia
+          </p>
+          <p className="text-lg text-center">Computer Science & Commerce</p>
+        </div>
       </Card>
 
-      <Card title="Text-Savvy" className="">
+      <Card title="Text-Savvy (WIP)" className="">
         <p>Become a better texter!</p>
       </Card>
 
