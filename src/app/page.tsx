@@ -7,7 +7,7 @@ import BioCard from './BioCard';
 
 export default function Home() {
   return (
-    <div className='grid grid-cols-4 gap-4 py-4 px-52'>
+    <div className='flex flex-col gap-4 py-[5%] px-[10%] lg:grid lg:grid-cols-4'>
 
       <Card
         title="📍 San Francisco"
@@ -15,12 +15,12 @@ export default function Home() {
       >
       </Card>
       <BioCard />
-      <div className='grid grid-rows-2 col-span-2 gap-4'>
+      <div className='grid grid-rows-2 lg:col-span-2 gap-4'>
         <ContactCard />
         <ResumeCard />
       </div>
 
-      <ExperienceCard className='row-start-2 col-start-1 row-span-2' />
+      <ExperienceCard className='row-span-2' />
 
       <NameCard className='col-span-2' />
 
@@ -41,17 +41,21 @@ export default function Home() {
         </div>
       </Card>
 
-      <Card title="Text-Savvy (WIP)" className="">
-        <p>Become a better texter!</p>
-      </Card>
+      <a href="https://github.com/jasonjche/text-savvy" target="_blank" rel="noopener noreferrer">
+        <Card title="Text-Savvy (WIP)" className="">
+          <p>Become a better texter!</p>
+        </Card>
+      </a>
 
       <Card title="Totem" className="">
         <p>Never lose your friends at a festival again!</p>
       </Card>
 
-      <Card title="recipez" className="">
-        <p>Don't think about your grocery list</p>
-      </Card>
+      <a href="https://github.com/jasonjche/recipez" target="_blank" rel="noopener noreferrer">
+        <Card title="recipez" className="">
+          <p>Don't think about your grocery list</p>
+        </Card>
+      </a>
     </div>
   );
 }

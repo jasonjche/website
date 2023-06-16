@@ -7,7 +7,7 @@ const ContactCard = () => {
         rel: 'noopener noreferrer',
     };
 
-    const cardHoverClasses = 'hover:text-white transition-colors duration-200 block flex justify-center items-center';
+    const cardHoverClasses = 'h-full hover:text-white transition-colors duration-200 block flex justify-center items-center';
 
     return (
         <div className='grid grid-cols-4 gap-4 text-4xl'>
