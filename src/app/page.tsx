@@ -22,7 +22,7 @@ export default function Home() {
 
       <ExperienceCard className='row-span-2' />
 
-      <NameCard className='col-span-2' />
+      <NameCard className='col-span-2 order-first lg:order-none' />
 
       <Card
         title=""
