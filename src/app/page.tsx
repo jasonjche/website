@@ -30,7 +30,7 @@ export default function Home() {
       >
         <div className="px-6 py-8">
           <img
-            src="/UVA-Symbol.png"
+            src="images/UVA-Symbol.png"
             alt="UVA"
             className="mx-auto mb-4 w-24 h-24"
           />
@@ -42,7 +42,7 @@ export default function Home() {
       </Card>
 
       <a href="https://github.com/jasonjche/text-savvy" target="_blank" rel="noopener noreferrer">
-        <Card title="Text-Savvy (WIP)" className="">
+        <Card title="Text-Savvy (WIP)" className="h-full">
           <p>Become a better texter!</p>
         </Card>
       </a>
@@ -52,7 +52,7 @@ export default function Home() {
       </Card>
 
       <a href="https://github.com/jasonjche/recipez" target="_blank" rel="noopener noreferrer">
-        <Card title="recipez" className="">
+        <Card title="recipez" className="h-full">
           <p>Don't think about your grocery list</p>
         </Card>
       </a>

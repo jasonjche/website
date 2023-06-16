@@ -24,11 +24,11 @@ type ExperienceCardProps = {
 
 const ExperienceCard = ({ className }: ExperienceCardProps) => {
   const jobs = [
-    { logo: "/reddit-logo.jpeg", company: "Reddit", jobDescription: "Product Management Intern" },
-    { logo: "/uva-logo.jpeg", company: "UVA HCI Lab", jobDescription: "AR/VR Researcher" },
-    { logo: "/stacker-logo.jpeg", company: "Stacker", jobDescription: "Product Management Intern" },
-    { logo: "/viget-logo.jpeg", company: "Viget", jobDescription: "Product Management Intern" },
-    { logo: "/pv-logo.jpeg", company: "Parenthood Ventures", jobDescription: "Venture Intern" },
+    { logo: "images/reddit-logo.jpeg", company: "Reddit", jobDescription: "Product Management Intern" },
+    { logo: "images/uva-logo.jpeg", company: "UVA HCI Lab", jobDescription: "AR/VR Researcher" },
+    { logo: "images/stacker-logo.jpeg", company: "Stacker", jobDescription: "Product Management Intern" },
+    { logo: "images/viget-logo.jpeg", company: "Viget", jobDescription: "Product Management Intern" },
+    { logo: "images/pv-logo.jpeg", company: "Parenthood Ventures", jobDescription: "Venture Intern" },
   ];
 
   return (

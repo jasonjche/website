@@ -11,7 +11,7 @@ const BioCard = ({ className }: BioCardProps) => {
     <Card className={`flex items-center ${className}`}>
       <p className="text-xl text-gray-500"> {bio} </p>
       <img
-        src="/profile.png"
+        src="images/profile.png"
         alt="profile"
         className="rounded-full w-24 h-24 ml-4"
       />

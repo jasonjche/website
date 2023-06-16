@@ -11,7 +11,9 @@ module.exports = {
         text: 'text 5s ease infinite',
       },
       backgroundImage: {
-        'sf': "url('/sf.jpg')",
+        'sf': "url('/images/sf.jpg')",
+        'dc': "url('/images/dc.jpg')",
+        'cville': "url('/images/cville.jpg')",
       },
     }
   },
